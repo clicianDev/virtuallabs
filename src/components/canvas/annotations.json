@@ -29,6 +29,21 @@
       }
     },
     {
+      "title": "Arnold",
+      "description": "Game Developer",
+      "camPos": {
+        "x": 1,
+        "y": 1,
+        "z": -10
+      },
+      "lookAt": {
+        "x": -1,
+        "y": 1,
+        "z": -0.5
+      }
+    },
+
+    {
       "title": "Luigi",
       "description": "Lead UI/UX Designer",
       "camPos": {

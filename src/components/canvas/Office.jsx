@@ -10,7 +10,7 @@ import Luigi from "./Luigi";
 import Dj from "./Dj";
 import FlowG from "./FlowG";
 import annotations from './annotations.json'
-
+import Arnold from "./Arnold";
 
 function Annotations({ selected, gotoAnnotation }) {
   return (
@@ -123,6 +123,8 @@ const OfficeCanvas = () => {
        <FlowG isMobile={isMobile}
          position={isMobile ? [0, 0,  0] : [2, 0, -4]}
         />
+        <Arnold isMobile={isMobile}
+         position={isMobile ? [0, 0,  0] : [-1, 0, -0.5]}/>
       </Suspense>
 
       <Preload all />
