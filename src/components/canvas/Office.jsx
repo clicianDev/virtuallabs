@@ -113,16 +113,18 @@ const OfficeCanvas = () => {
      
         <Lights/>
         <Office isMobile={isMobile} />
-        {/* <Me isMobile={isMobile}/> */}
+        <Me isMobile={isMobile} 
+         position={isMobile ? [0, 0,  0] : [-0.6, 0, -1.9]}
+        />
         <K isMobile={isMobile}/>
-        <Chris isMobile={isMobile}/>
+        {/* <Chris isMobile={isMobile}/> */}
         {/* <Luigi isMobile={isMobile}/>  */}
         <Dj isMobile={isMobile}
          position={isMobile ? [0, 0,  0] : [0, 0, -4]}
         />
-       {/* <FlowG isMobile={isMobile}
+       <FlowG isMobile={isMobile}
          position={isMobile ? [0, 0,  0] : [2, 0, -4]}
-        /> */}
+        />
         <Arnold isMobile={isMobile}
          position={isMobile ? [0, 0,  0] : [-1, 0, -0.5]}/>
       </Suspense>
