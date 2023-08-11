@@ -6,7 +6,8 @@ import CanvasLoader from "../Loader";
 import Me from "./Me";
 import K from "./K";
 import Dj from "./Dj";
-import FlowG from "./FlowG";
+import Luigi from "./Luigi";
+import Chris from "./Chris";
 import annotations from './annotations.json'
 import Arnold from "./Arnold";
 
@@ -114,14 +115,17 @@ const OfficeCanvas = () => {
         <Me isMobile={isMobile} 
          position={isMobile ? [0, 0,  0] : [-0.6, 0, -1.9]}
         />
-        <K isMobile={isMobile}/>
-        {/* <Chris isMobile={isMobile}/> */}
-        {/* <Luigi isMobile={isMobile}/>  */}
+        <K isMobile={isMobile}
+        position={isMobile ? [0, 0,  0] : [-0.6, 0, 0.33]}
+        />
+        <Chris isMobile={isMobile}
+         position={isMobile ? [0, 0,  0] : [2.3, 0, -1.2]}
+        />
+        <Luigi isMobile={isMobile}
+          position={isMobile ? [0, 0,  0] : [2.3, 0, -2.1]}
+        /> 
         <Dj isMobile={isMobile}
          position={isMobile ? [0, 0,  0] : [0, 0, -4]}
-        />
-       <FlowG isMobile={isMobile}
-         position={isMobile ? [0, 0,  0] : [2, 0, -4]}
         />
         <Arnold isMobile={isMobile}
          position={isMobile ? [0, 0,  0] : [-1, 0, -0.5]}/>

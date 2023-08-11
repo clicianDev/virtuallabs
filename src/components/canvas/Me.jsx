@@ -12,8 +12,6 @@ const Me = (props) => {
   const { nodes, materials, animations } = useGLTF('./characters/me/me.gltf')
   const { actions } = useAnimations(animations, group)
 
-  
-  console.log(animations)
   useEffect(() => {
     const mixer = new THREE.AnimationMixer(group.current);
     if (animations[0]) {
