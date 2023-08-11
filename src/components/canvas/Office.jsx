@@ -5,8 +5,6 @@ import Lights from "./Lights";
 import CanvasLoader from "../Loader";
 import Me from "./Me";
 import K from "./K";
-import Chris from "./Chris";
-import Luigi from "./Luigi";
 import Dj from "./Dj";
 import FlowG from "./FlowG";
 import annotations from './annotations.json'
