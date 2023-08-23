@@ -6,11 +6,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#ba04bd",
-        secondary: "#8504bd",
-        tertiary: "#151030",
-        "black-100": "#100d25",
-        "black-200": "#090325",
+        primary: "#FF2DDF",
+        secondary: "#5E3B76",
+        tertiary: "#0D0811",
+        "black-100": "#1b1122",
+        "black-200": "#281A33",
         "white-100": "#f3f3f3",
       },
       boxShadow: {

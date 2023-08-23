@@ -57,7 +57,7 @@ const Office = ({ isMobile }) => {
   );
 };
 
-const OfficeCanvas = () => {
+const OfficeCanvas = (props) => {
   const [isMobile, setIsMobile] = useState(false);
   const ref = useRef()
   const [lerping, setLerping] = useState(false)
@@ -70,6 +70,7 @@ const OfficeCanvas = () => {
     setTarget(annotations[idx].lookAt)
     setSelected(idx)
     setLerping(true)
+    props.onCharacterDetails(annotations[idx])
   }
  
   useEffect(() => {
@@ -93,11 +94,12 @@ const OfficeCanvas = () => {
     };
   }, []);
 
-  return (
+  return ( 
+  <>
     <Canvas
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [-5, 7, -10], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
       onPointerDown={() => setLerping(false)} onWheel={() => setLerping(false)}
     >
@@ -105,7 +107,6 @@ const OfficeCanvas = () => {
         <OrbitControls 
           ref={ref}
            enableZoom={true}
-          
         />
          <Annotations selected={selected} gotoAnnotation={gotoAnnotation} />
         <Animate controls={ref} lerping={lerping} to={to} target={target} />
@@ -132,7 +133,10 @@ const OfficeCanvas = () => {
       </Suspense>
       
       <Preload all />
+
     </Canvas>
+   
+   </>
   );
 };
 
